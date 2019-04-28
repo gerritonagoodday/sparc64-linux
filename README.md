@@ -1,10 +1,12 @@
 # Linux Distro for Sun Ultra5 / Ultra10 Sparc 2 machines
 
->Blessed are the cheesemakers
->Blessed are the meek
->Blessed are the bignoses
->Oooh, that's nice, isn't it?
-> - from Monty Python's The Life of Brian
+```
+Blessed are the cheesemakers
+Blessed are the meek
+Blessed are the bignoses
+Oooh, that's nice, isn't it?
+ - from Monty Python's The Life of Brian
+ ```
      
 BigNose Linux is a binary Linux installation for Sun Ultra5/10 computers and is based on the Gentoo Linux __meta-distro__,  The BigNose Linux distro is primarily intended to quickly create a web server using the classical LAMP-stack  (Linux, Apache, MySQL and PHP) with Joomla and a few other useful web-based management tools. 
 
@@ -16,7 +18,9 @@ This distro CD installs a binary installation on your Sun Ultra5/10 computer, wh
 
 ## Why
 
-Many people still own and love Ultra 5 and Ultra 10 machines since they are built like little fortresses and are very reliable and quiet. They are also dirt cheap on eBay (on average £20 per machine). They were, after all, the first 64-bit desktops available on the open market 10 years ago and they sure weren't cheap then. The nice thing is that  they use commodity hardware and any PC monitor and most IDE hard disks work with them.
+Breathe some life into your Sun Ultra5 and Ultra10 machine!
+
+Many people still own and love Ultra 5 and Ultra 10 machines since they are built like little fortresses and are very reliable and run very quiet. They are also dirt cheap on eBay (on average £20 per machine). They were, after all, the first 64-bit desktops available on the open market 20 years ago and they sure weren't cheap then. The nice thing is that  they use commodity hardware and any PC monitor and most IDE hard disks work with them.
 
 Ultra 5 and Ultra 10 machines are  not particularly useful for today's graphical computing needs any more and even their 270MHz - 330MHz clockspeeds make them relatively non-performant when you get machines that have 10 times the clockspeed speed. 
 
@@ -102,7 +106,9 @@ The machine will power down and then up again and you will eventually be greeted
 
  This will boot the live CD. Once the booting process has gone through its girations and come to a standstill, it is time to start the installation. You should now be in a terminal with a ```livecd #``` prompt. Execute the command:
 
-```livecd # bignose``` - and follow the steps in the installation wizard. If your hardware is as expected, you should have a fully functioning BigNoseLinux on you Ultra5/10 machine in under 30 minutes.
+```livecd # bignose``` 
+
+- and follow the steps in the installation wizard. If your hardware is as expected, you should have a fully functioning BigNoseLinux on you Ultra5/10 machine in under 30 minutes.
 
 ## Installation over a Serial Link 
 
@@ -111,7 +117,7 @@ If you do not have a Sun type 5 or 6 keyboard or a compatible monitor, or do not
 ### Hardware overview
 
 Here is what you need:
-* Another working computer that has a serial port. Here we assume that it is another Linux box (would it be anything else?)
+* Another working computer that has a serial port. Here we assume that it is another Linux box.
 * The program minicom should be installed. Ensure that you are a member of the dialout group (for which you need root access to add yourself to this group)  
 * A null-model serial cable. Your 'other' computer probably is an X86-based machine with a 9-pin, female serial D-connector port (DB9-F), but your Ultra 5/10 has a 25-pin male D-connector (DB25-M). Buy a serial cable [DB9F to DB25M Null modem cable](# href="http://www.cabling4less.co.uk/index.php?action=search&searchTerm=DB9&go=Go) for very cheap.
 * Know which serial port you are connecting on the host computer. What is mostly marked up as COM1 on an X86-based machine is /dev/ttyS0 in Linux-speak. i.e. COM2 is /dev/ttyS1 etc..
@@ -122,7 +128,7 @@ The 25-pin male end of the serial cable goes into the 25-pin port on the Ultra 5
 
 ### Set up minicom on your host machine
 
-You need the following serial configuration to connect to a Ultra 5/10: 9600 baud, no parity, 8 bits, 1 stop bit, Hardware flow control, initialisation string: "```~^M~```". Save yourself the configuration work and simply paste the following into the a file named ~/.minicom.sun:
+You need the following serial configuration to connect to a Ultra 5/10: 9600 baud, no parity, 8 bits, 1 stop bit, Hardware flow control, initialisation string: ```~^M~```. Save yourself the configuration work and simply paste the following into the a file named ~/.minicom.sun:
 
 ```bash
 pu port             /dev/ttyS0
