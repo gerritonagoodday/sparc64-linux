@@ -1,10 +1,10 @@
 # Linux Distro for Sun Ultra5 / Ultra10 Sparc 2 machines
 
 >Blessed are the cheesemakers
-Blessed are the meek
-Blessed are the bignoses
-Oooh, that's nice, isn't it?
-- from Monty Python's The Life of Brian
+>Blessed are the meek
+>Blessed are the bignoses
+>Oooh, that's nice, isn't it?
+> - from Monty Python's The Life of Brian
      
 BigNose Linux is a binary Linux installation for Sun Ultra5/10 computers and is based on the Gentoo Linux __meta-distro__,  The BigNose Linux distro is primarily intended to quickly create a web server using the classical LAMP-stack  (Linux, Apache, MySQL and PHP) with Joomla and a few other useful web-based management tools. 
 
